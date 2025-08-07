@@ -2,6 +2,7 @@ import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import NoLibrary from './animations/NoLibrary'
 import AnimatedBasic from './animations/AnimatedBasic'
+import Value from './animations/Value'
 
 const App = () => {
   return (
@@ -9,7 +10,8 @@ const App = () => {
       <Text
         style={styles.text}>Animations</Text>
       {/* <NoLibrary /> */}
-      <AnimatedBasic />
+      {/* <AnimatedBasic /> */}
+      <Value />
     </View>
   )
 }
