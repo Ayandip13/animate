@@ -28,6 +28,8 @@ const Value2 = () => {
             <Animated.Text
                 style={{
                     transform: [{ scale: zoomAnim }],
+                    //scale is used to make the component smaller or bigger by value...
+                    //transform property is used to make the component move, rotate or scale
                     fontSize: 20,
                     color: '#fff',
                     textAlign: 'center'

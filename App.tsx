@@ -4,6 +4,7 @@ import NoLibrary from './animations/NoLibrary'
 import AnimatedBasic from './animations/AnimatedBasic'
 import Value from './animations/Value'
 import Value2 from './animations/Value2'
+import Value3 from './animations/Value3'
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       {/* <AnimatedBasic /> */}
       {/* <Value /> */}
       <Value2 />
+      <Value3 />
     </View>
   )
 }
