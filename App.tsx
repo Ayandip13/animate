@@ -3,6 +3,7 @@ import React from 'react'
 import NoLibrary from './animations/NoLibrary'
 import AnimatedBasic from './animations/AnimatedBasic'
 import Value from './animations/Value'
+import Value2 from './animations/Value2'
 
 const App = () => {
   return (
@@ -11,7 +12,8 @@ const App = () => {
         style={styles.text}>Animations</Text>
       {/* <NoLibrary /> */}
       {/* <AnimatedBasic /> */}
-      <Value />
+      {/* <Value /> */}
+      <Value2 />
     </View>
   )
 }

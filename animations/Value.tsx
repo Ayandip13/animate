@@ -7,9 +7,9 @@ const Value = () => {
     //We're storing the Animated.Value(0) inside a ref, so it persist the values across re-renders, and we use current for the value itself.
 
     const position1 = useAnimatedValue(10)
+    // This is the newer method to use the animated values
     const position2 = useAnimatedValue(10)
     const position3 = Animated.add(position1, position2)
-    // This is the newer method to use the animated values
 
 
 
