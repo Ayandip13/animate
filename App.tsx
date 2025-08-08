@@ -5,6 +5,7 @@ import AnimatedBasic from './animations/AnimatedBasic'
 import Value from './animations/Value'
 import Value2 from './animations/Value2'
 import Value3 from './animations/Value3'
+import Interpolation from './animations/Interpolation'
 
 const App = () => {
   return (
@@ -14,8 +15,9 @@ const App = () => {
       {/* <NoLibrary /> */}
       {/* <AnimatedBasic /> */}
       {/* <Value /> */}
-      <Value2 />
-      <Value3 />
+      {/* <Value2 />
+      <Value3 /> */}
+      <Interpolation />
     </View>
   )
 }
@@ -27,7 +29,7 @@ const styles = StyleSheet.create({
     flex: 1,
     // justifyContent: 'center',
     // alignItems: 'center'
-    backgroundColor: '#222'
+    backgroundColor: '#1C352D'
   },
   text: {
     color: '#fff',
