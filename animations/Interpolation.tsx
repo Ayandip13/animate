@@ -116,27 +116,47 @@ const Interpolation = () => {
                 ]}>
                 Interpolation
             </Animated.Text>
-            
+
 
             <View style={{ backgroundColor: "#fff", height: 1, width: "100%" }} />
 
-            <TouchableOpacity onPress={jump} style={styles.button}>
+            <TouchableOpacity
+                activeOpacity={0.5}
+                onPress={jump}
+                style={styles.button}
+            >
                 <Text style={styles.btnText}>Jump</Text>
             </TouchableOpacity>
 
-            <TouchableOpacity onPress={dissapear} style={styles.button}>
+            <TouchableOpacity
+                activeOpacity={0.5}
+                onPress={dissapear}
+                style={styles.button}
+            >
                 <Text style={styles.btnText}>Disappear</Text>
             </TouchableOpacity>
 
-            <TouchableOpacity onPress={startAnim} style={styles.button}>
+            <TouchableOpacity
+                activeOpacity={0.5}
+                onPress={startAnim}
+                style={styles.button}
+            >
                 <Text style={styles.btnText}>X direction</Text>
             </TouchableOpacity>
 
-            <TouchableOpacity onPress={scalling} style={styles.button}>
+            <TouchableOpacity
+                activeOpacity={0.5}
+                onPress={scalling}
+                style={styles.button}
+            >
                 <Text style={styles.btnText}>Scale it</Text>
             </TouchableOpacity>
 
-            <TouchableOpacity onPress={rotatation} style={styles.button}>
+            <TouchableOpacity
+                activeOpacity={0.5}
+                onPress={rotatation}
+                style={styles.button}
+            >
                 <Text style={styles.btnText}>Rotate it</Text>
             </TouchableOpacity>
 
@@ -146,11 +166,11 @@ const Interpolation = () => {
                     borderRadius: 25,
                     flexDirection: 'row'
                 }}>
-                <TouchableOpacity style={[styles.button, { paddingHorizontal: 30 }]}>
+                <TouchableOpacity activeOpacity={0.5} style={[styles.button, { paddingHorizontal: 30 }]}>
                     <Text style={styles.btnText}>expand it</Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity style={[styles.button, { paddingHorizontal: 30,marginLeft:-20 }]}>
+                <TouchableOpacity activeOpacity={0.5} style={[styles.button, { paddingHorizontal: 30, marginLeft: -20 }]}>
                     <Text style={styles.btnText}>shrink it</Text>
                 </TouchableOpacity>
             </View>
@@ -174,9 +194,9 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontWeight: 'bold'
     },
-    animatedView:{
-        backgroundColor:'#F5C9B0',
-        height:100,
-        width:100
+    animatedView: {
+        backgroundColor: '#F5C9B0',
+        height: 100,
+        width: 100
     }
 })
