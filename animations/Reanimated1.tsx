@@ -7,6 +7,8 @@ const Reanimated1 = () => {
     const X = useSharedValue(0) // X position of the circle
     const Y = useSharedValue(0) // Y position of the circle
 
+    //X = {value:0} it's the same as X = useSharedValue(0)
+
     // Animated style: updates when shared values change
     const animatedBoxStyle = useAnimatedStyle(() => {
         return {
