@@ -19,12 +19,12 @@ const Reanimated1 = () => {
 
     // Handler to toggle X movement
     const handlerX = () => {
-        if (X.value == 100) {
+        if (X.value == 0) {
             // Move back to original position
-            X.value = withSpring(0)
+            X.value = withSpring(100)
         } else {
             // Move 100 units to the right
-            X.value = withSpring(100)
+            X.value = withSpring(0)
         }
     }
 
