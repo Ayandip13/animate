@@ -1,6 +1,6 @@
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
-import React from 'react'
-import Animated, { useAnimatedStyle, useSharedValue, withSpring } from 'react-native-reanimated'
+import React, { useEffect } from 'react'
+import Animated, { useAnimatedStyle, useSharedValue, withSpring, withTiming } from 'react-native-reanimated'
 
 const Reanimated1 = () => {
     // Shared values: hold animation state
@@ -23,10 +23,10 @@ const Reanimated1 = () => {
     const handlerX = () => {
         if (X.value == 0) {
             // Move back to original position
-            X.value = withSpring(100)
+            X.value = withTiming(100, { duration: 500 })
         } else {
             // Move 100 units to the right
-            X.value = withSpring(0)
+            X.value = withTiming(0, { duration: 500 })
         }
     }
 
@@ -34,10 +34,10 @@ const Reanimated1 = () => {
     const handlerY = () => {
         if (Y.value == 0) {
             // Move 100 units upward
-            Y.value = withSpring(-100)
+            Y.value = withTiming(-100, { duration: 500 })
         } else {
             // Move back to original position
-            Y.value = withSpring(0)
+            Y.value = withTiming(0, { duration: 500 })
         }
     }
 
