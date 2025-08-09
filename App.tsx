@@ -6,6 +6,7 @@ import Value from './animations/Value'
 import Value2 from './animations/Value2'
 import Value3 from './animations/Value3'
 import Interpolation from './animations/Interpolation'
+import Reanimated1 from './animations/Reanimated1'
 
 const App = () => {
   return (
@@ -17,7 +18,8 @@ const App = () => {
       {/* <Value /> */}
       {/* <Value2 />
       <Value3 /> */}
-      <Interpolation />
+      {/* <Interpolation /> */}
+      <Reanimated1 />
     </View>
   )
 }
