@@ -118,7 +118,7 @@ const Interpolation = () => {
             </Animated.Text>
 
 
-            <View style={{ backgroundColor: "#fff", height: 1, width: "100%" }} />
+            <View style={{ backgroundColor: "#fff", height: 1, width: "100%",marginTop:-5 }} />
 
             <TouchableOpacity
                 activeOpacity={0.5}
