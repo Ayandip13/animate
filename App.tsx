@@ -11,6 +11,7 @@ import Reanimated2 from './animations/Reanimated2'
 import Like from './animations/Like'
 import { GestureHandlerRootView } from 'react-native-gesture-handler'
 import Like2 from './animations/Like2'
+import PanGesture from './animations/PanGesture'
 
 const App = () => {
   return (
@@ -24,9 +25,10 @@ const App = () => {
       <Value3 /> */}
       {/* <Interpolation /> */}  //Using core Animated API
       {/* <Reanimated1 />    //Using Reanimated */}
-      {/* <Reanimated2 />    //Using Reanimated(2) */}
+      <Reanimated2 />    //Using Reanimated(2)
       {/* <Like /> */}
-      <Like2 />
+      {/* <Like2 /> */}
+      {/* <PanGesture /> */}
     </GestureHandlerRootView>
   )
 }

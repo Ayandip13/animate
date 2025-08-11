@@ -131,15 +131,22 @@ const Reanimated2 = () => {
             <TouchableOpacity
                 onPress={() => {
                     if (traanslateX.value == 0) {
-                        traanslateX.value = withTiming(50, { duration: 1000 })
-                        rotate.value = withTiming('360deg', { duration: 1000 })
-                        scale.value = withTiming(2, { duration: 1000 })
-                    } else {
-                        traanslateX.value = withTiming(0, { duration: 1000 })
-                        rotate.value = withTiming('0deg', { duration: 1000 })
-                        rotate.value = withTiming('0deg', { duration: 1000 })
-                        scale.value = withTiming(1, { duration: 1000 })
+                        traanslateX.value = withTiming(50, { duration: 1000 }, () => {
+                            traanslateX.value = withTiming(0, { duration: 1000 })
+                        })
+                        rotate.value = withTiming('360deg', { duration: 1000 }, () => {
+                            rotate.value = withTiming('0deg', { duration: 1000 })
+                        })
+                        scale.value = withTiming(2, { duration: 1000 }, () => {
+                            scale.value = withTiming(1, { duration: 1000 })
+                        })
                     }
+                    // else {
+                    //     traanslateX.value = withTiming(0, { duration: 1000 })
+                    //     rotate.value = withTiming('0deg', { duration: 1000 })
+                    //     rotate.value = withTiming('0deg', { duration: 1000 })
+                    //     scale.value = withTiming(1, { duration: 1000 })
+                    // }
                 }}
                 style={{
                     marginTop: 20,
