@@ -8,10 +8,12 @@ import Value3 from './animations/Value3'
 import Interpolation from './animations/Interpolation'
 import Reanimated1 from './animations/Reanimated1'
 import Reanimated2 from './animations/Reanimated2'
+import Like from './animations/Like'
+import { GestureHandlerRootView } from 'react-native-gesture-handler'
 
 const App = () => {
   return (
-    <View style={styles.container}>
+    <GestureHandlerRootView style={styles.container}>
       <Text
         style={styles.text}>Animations</Text>
       {/* <NoLibrary /> */}
@@ -21,8 +23,9 @@ const App = () => {
       <Value3 /> */}
       {/* <Interpolation /> */}  //Using core Animated API
       {/* <Reanimated1 />    //Using Reanimated */}
-      <Reanimated2 />    //Using Reanimated(2)
-    </View>
+      {/* <Reanimated2 />    //Using Reanimated(2) */}
+      <Like />
+    </GestureHandlerRootView>
   )
 }
 
