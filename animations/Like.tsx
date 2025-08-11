@@ -4,6 +4,13 @@ import Animated, { useAnimatedStyle, useSharedValue, withSpring } from 'react-na
 import { Gesture, GestureDetector } from 'react-native-gesture-handler'
 import { runOnJS } from 'react-native-worklets'
 
+/**
+ * This component displays a heart icon that can be double-tapped to start an animation.
+ * The animation will spring the icon 100 units to the top, scale it up to twice the size,
+ * and flip it around its vertical axis. After 1 second, the icon will spring back to its
+ * original size and position.
+ * @returns JSX.Element
+ */
 const Like = () => {
   const [liked, setLiked] = useState<boolean>(false)
   const likeY = useSharedValue(0)
