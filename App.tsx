@@ -10,6 +10,7 @@ import Reanimated1 from './animations/Reanimated1'
 import Reanimated2 from './animations/Reanimated2'
 import Like from './animations/Like'
 import { GestureHandlerRootView } from 'react-native-gesture-handler'
+import Like2 from './animations/Like2'
 
 const App = () => {
   return (
@@ -24,7 +25,8 @@ const App = () => {
       {/* <Interpolation /> */}  //Using core Animated API
       {/* <Reanimated1 />    //Using Reanimated */}
       {/* <Reanimated2 />    //Using Reanimated(2) */}
-      <Like />
+      {/* <Like /> */}
+      <Like2 />
     </GestureHandlerRootView>
   )
 }
