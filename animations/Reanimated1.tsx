@@ -2,6 +2,18 @@ import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React, { useEffect } from 'react'
 import Animated, { useAnimatedStyle, useSharedValue, withSpring, withTiming } from 'react-native-reanimated'
 
+/**
+ * This component demonstrates the use of `useSharedValue` and
+ * `useAnimatedStyle` from Reanimated.
+ *
+ * It displays a circle which can be moved horizontally or vertically
+ * by pressing the two buttons below it. The circle's position is
+ * animated using Reanimated.
+ *
+ * The animated style is computed using `useAnimatedStyle` which
+ * returns a style object that is updated when the shared values
+ * change. The shared values are updated by the buttons' press handlers.
+ */
 const Reanimated1 = () => {
     // Shared values: hold animation state
     const X = useSharedValue(0) // X position of the circle

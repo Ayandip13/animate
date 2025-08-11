@@ -21,8 +21,7 @@ const App = () => {
       <Value3 /> */}
       {/* <Interpolation /> */}  //Using core Animated API
       {/* <Reanimated1 />    //Using Reanimated */}
-      {/* <Reanimated2 />    //Using Reanimated(2) */}
-
+      <Reanimated2 />    //Using Reanimated(2)
     </View>
   )
 }

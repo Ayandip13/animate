@@ -2,6 +2,20 @@ import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import Animated, { useAnimatedStyle, useSharedValue, withSpring, withTiming } from 'react-native-reanimated'
 
+/**
+ * Reanimated2 component demonstrates various animations using Reanimated library.
+ * 
+ * This component animates a box with transformations such as translation, rotation, 
+ * scaling, and opacity changes. It provides multiple buttons to trigger these animations:
+ * - Move Lft & Rgt: Translates the box horizontally.
+ * - Move Up & Dwn: Translates the box vertically.
+ * - Rotate: Rotates the box.
+ * - Scale it: Scales the box.
+ * - Combination(1): Combines translation, rotation, and scaling.
+ * - Combination(2): Combines scaling, opacity, and horizontal translation.
+ * 
+ * The animations are achieved using shared values and animated styles.
+ */
 const Reanimated2 = () => {
     const traanslateX = useSharedValue(0)
     const traanslateY = useSharedValue(0)
