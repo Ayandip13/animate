@@ -132,13 +132,13 @@ const Reanimated2 = () => {
                 onPress={() => {
                     if (traanslateX.value == 0) {
                         traanslateX.value = withTiming(50, { duration: 1000 }, () => {
-                            traanslateX.value = withTiming(0, { duration: 1000 })
+                            traanslateX.value = withTiming(0, { duration: 300 })
                         })
                         rotate.value = withTiming('360deg', { duration: 1000 }, () => {
-                            rotate.value = withTiming('0deg', { duration: 1000 })
+                            rotate.value = withTiming('0deg', { duration: 300 })
                         })
                         scale.value = withTiming(2, { duration: 1000 }, () => {
-                            scale.value = withTiming(1, { duration: 1000 })
+                            scale.value = withTiming(1, { duration: 300 })
                         })
                     }
                     // else {
@@ -163,14 +163,18 @@ const Reanimated2 = () => {
             <TouchableOpacity
                 onPress={() => {
                     if (opacity.value == 1) {
-                        opacity.value = withSpring(0.6)
-                        scale.value = withSpring(0.8)
-                        traanslateX.value = withSpring(50)
-                    } else {
-                        opacity.value = withTiming(1)
-                        scale.value = withTiming(1)
-                        traanslateX.value = withTiming(0)
+                        opacity.value = withTiming(0.6, { duration: 1000 }, () => {
+                            opacity.value = withTiming(1, { duration: 500 })
+                        })
+                        scale.value = withTiming(0.8, { duration: 1000 }, () => {
+                            scale.value = withTiming(1, { duration: 500 })
+                        })
+                        traanslateX.value = withTiming(50, { duration: 1000 }, () => {
+                            traanslateX.value = withTiming(0, { duration: 500 })
+                        })
                     }
+                    // else {
+                    // }
                 }}
                 style={{
                     marginTop: 20,
